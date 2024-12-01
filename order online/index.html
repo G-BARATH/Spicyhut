@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Food | Corner</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>SPICY | HUT | RESTARUANT</h1>
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Search for fooditems..." oninput="filterFoods()">
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li title="price"><a href="price.html">price</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <section class="filters">
+    <button onclick="filterByCategory('All')">All</button>
+    <button onclick="filterByCategory('Vegetarian')">Vegetarian</button>
+    <button onclick="filterByCategory('Non-Vegetarian')">Non-Vegetarian</button>
+    <button onclick="filterByCategory('Desserts')">Desserts</button>
+  </section>
+
+  <section id="food-list" class="food-list">
+    <!-- Food items will be displayed here dynamically -->
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
