@@ -1,6 +1,6 @@
 function redirectToZomato() {
     console.log("Redirecting to Zomato...");
-    const zomatoLink = "order online/index.html";
+    const zomatoLink = "order/order.html";
     
     if (zomatoLink) {
       console.log("Redirecting to:", zomatoLink);

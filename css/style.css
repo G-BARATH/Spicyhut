@@ -3,6 +3,7 @@
     --green:#53BF9D;
     --yellow:#FFC54D;
     --white:whitesmoke;
+    --black:#000;
 }
 
 body,h2{
@@ -17,26 +18,27 @@ body,h2{
     height:100vh;
     color:var(--white);
 }
-
 header a{
     color:var(--white);
     text-decoration: None;
     display: inline;
+    /*------menu location--------*/
     color: var(--yellow);
+    font-size: 1.5em;
     min-width: 120px;
 }
 
 
 header{
     display:flex;
-    padding: 1em;
+    padding: 2em;
     flex-wrap: wrap;
-    row-gap: 1em;
+    row-gap: em;
 }
 
 #logo{
-    flex:3;
-    font-size: 2em;
+    flex:2;
+    font-size: 2.2em;
     color:var(--yellow);
     min-width: 260px
 }
@@ -44,7 +46,7 @@ header{
 header h2 i,nav a i{
     margin-right: .5em;
 }
-
+/*-----------menu loc location----*/
 nav{
     flex:2;
     display:flex;
@@ -56,7 +58,7 @@ nav a{
 }
 
 nav a:hover{
-    color:var(--red);
+    color:var(--green);
 }
 
 .maintext{
@@ -73,27 +75,32 @@ nav a:hover{
 
 .tagline1{
     font-size:3em;
+    justify-content: center;
     font-weight: bolder;
     color: var(--red);
+    padding: 0em;
 }
 
 .maintext button{
     width:20vw;
-    margin-top: 2em;
+    font-weight: 15em;
+    margin-top: 1em;
     border-radius: 10px;
-    padding:.7em;
-    color: var(--black);
-    background-color:var(--green);
+    padding:1em;
+    color: var(--white);
+    background-color:rgb(13, 218, 24);
     border: 1px solid var(--green);
+}
+.maintext button:hover{
+    color: var(--black);
 }
 
 .tagline2{
     color:var(--yellow);
     font-size: 2em;
 }
-
 #menuheading,#locheading{
-    background:linear-gradient(to right,rgb(100, 100, 100),rgb(53, 52, 52));
+    background:linear-gradient(to right,rgb(2, 3, 3),rgb(49, 221, 192));
     font-size:2.5em;
     color:var(--red);
     display: flex;
@@ -131,7 +138,7 @@ nav a:hover{
 
 table{
     width:100%;
-    padding:1em;
+    padding:3em;
 }
 
 .locations address{
@@ -142,7 +149,9 @@ table{
     display:flex;
     flex-wrap: wrap;
     justify-items: center;
-    background:linear-gradient(to right,rgb(100, 100, 100),rgb(53, 52, 52));
+    background: url('../media/loc.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .locheading{
     font-size:1.75em;
@@ -152,17 +161,17 @@ table{
 }
 
 .locations div{
-    padding:2em;
+    padding:4em;
     flex:1;
 }
 
 .locations div h2{
-    color: var(--green);
+    color: var(--yellow);
     margin-bottom: 1.2em;
 }
 
 footer{
-    background-color: rgb(55, 55, 55);
+    background: linear-gradient(to right,rgb(2, 3, 3),rgb(3, 3, 3));
     color:var(--white);
     padding:.25em 1em;
 }
@@ -201,7 +210,7 @@ footer{
     background-color: #fff;
     text-align: center;
     transition: .6s;
-    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+    box-shadow: 0 5px 4px rgb(0, 0, 0);
 }
 
 .social-menu ul li a:hover{
