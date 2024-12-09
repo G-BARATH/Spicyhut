@@ -27,7 +27,7 @@ header a{
     text-decoration: None;
     display: inline;
     /*------menu location--------*/
-    color: orange;
+    color: rgb(255, 166, 0);
     font-size: 1.5em;
     min-width: 120px;
 }
@@ -51,7 +51,7 @@ header{
 header h2 i,nav a i{
     margin-right: .5em;
 }
-/*-----------menu loc location----*/
+/*-----------menu loc location------------*/
 nav{
     flex:2;
     display:flex;
@@ -166,7 +166,7 @@ table{
 }
 
 .locations div{
-    padding:4em;
+    padding:3.9em;
     flex:1;
 }
 
