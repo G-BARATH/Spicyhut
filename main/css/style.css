@@ -6,12 +6,25 @@
     --black:#000;
 }
 
-h3{
+p,h3{
     background: #000;
-    color: aliceblue;
+    color: rgb(253, 116, 3);
     text-align: center;
-    text-decoration: dashed;
-}
+    white-space: nowrap; /* Prevents the text from wrapping */
+    overflow: hidden; /* Hides the text when it moves out of the container */
+    width: 100%; /* Ensures the full width is used */
+    animation: moveText 5s linear infinite; /* Animation definition */
+    }
+
+    @keyframes moveText {
+        0% {
+            transform: translateX(100%); /* Start off-screen to the right */
+        }
+        100% {
+            transform: translateX(-100%); /* End off-screen to the left */
+        }
+    }
+    
 
 .landing {
     background: url('../media/bg.jpg');
@@ -29,9 +42,10 @@ header a{
     text-decoration: none;
     display: inline;
     /*------menu location--------*/
-    color: rgb(255, 166, 0);
+    color: rgb(241, 245, 6);
     font-size: 1.1em;
     min-width: 120px;
+    font-weight: bolder;
 }
 
 
