@@ -89,7 +89,7 @@ nav a:hover{
     display: flex;
     flex-direction:column;
     text-align: center;
-    height: 35vh;
+    height: 60vh;
     justify-content: center;
     padding:2.5em;
     row-gap: .5em;
@@ -109,7 +109,7 @@ nav a:hover{
 
 .maintext button{
     width:  40vw;
-    margin-left: 25em;
+    margin-left: 6em;
     margin-top: 1em;
     border-radius:15px;
     padding: 1em;
@@ -198,7 +198,7 @@ table{
 footer{
     background: linear-gradient(to right,rgb(2, 3, 3),rgb(3, 3, 3));
     color:var(--white);
-    padding:15em em;
+    padding:15em 0em;
 }
 footer,p{
     text-align: center;
@@ -209,13 +209,14 @@ footer,p{
 }
 .social-menu ul{
     display: flex;
-    padding:0;
+    padding: 5em 0em;
 }
 
 .social-menu ul li{
     list-style: none;
     display:inline-block;
-    margin: 0 15px;
+    margin: 1px 18px;
+    
 }
 
 .social-menu ul li .fab{
