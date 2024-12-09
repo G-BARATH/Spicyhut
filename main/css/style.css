@@ -6,23 +6,26 @@
     --black:#000;
 }
 
-p,h3{
-    background: #000;
-    color: rgb(253, 116, 3);
+#run{
+    color:lightgoldenrodyellow;
+    font-weight: bolder;
     text-align: center;
     white-space: nowrap; /* Prevents the text from wrapping */
     overflow: hidden; /* Hides the text when it moves out of the container */
     width: 100%; /* Ensures the full width is used */
-    animation: moveText 5s linear infinite; /* Animation definition */
+    animation: moveText 10s linear infinite; /* Animation definition */
     }
 
     @keyframes moveText {
         0% {
-            transform: translateX(100%); /* Start off-screen to the right */
+            transform: translateX(90%); /* Start off-screen to the right */
         }
         100% {
-            transform: translateX(-100%); /* End off-screen to the left */
+            transform: translateX(-90%); /* End off-screen to the left */
         }
+    }
+    body{
+        background: #000;
     }
     
 
@@ -30,20 +33,20 @@ p,h3{
     background: url('../media/bg.jpg');
     background-size: cover;
     background-position: center;
-    height:100vh;
+    height:90vh;
     color:var(--white);
 }
 h1{
     margin-left: 15em;
-    color:red;
+    color:rgb(255, 4, 4);
 }
 header a{
     color:var(--white);
     text-decoration: none;
     display: inline;
     /*------menu location--------*/
-    color: rgb(241, 245, 6);
-    font-size: 1.1em;
+    color: rgb(221, 165, 11);
+    font-size: 1.2em;
     min-width: 120px;
     font-weight: bolder;
 }
@@ -51,23 +54,23 @@ header a{
 
 header{
     display:flex;
-    padding: 1em;
+    padding:em;
     flex-wrap: wrap;
-    row-gap: 2em;
+    row-gap: 1.2em;
 }
 
 #logo{
     flex:2;
-    font-size: 2.2em;
+    font-size: 2.5em;
     /*-------spicy color-----*/
-    color:rgb(255, 173, 20);
+    color:rgb(255, 198, 9);
     min-width: 260px
 }
 
 header h2 i,nav a i{
-    margin-right:.5em;
-}
+    margin-right:.3em;
 /*-----------menu loc location------------*/
+}
 nav{
     flex:3;
     display:flex;
@@ -79,13 +82,14 @@ nav a{
 }
 
 nav a:hover{
-    color: red;
+    color: rgb(21, 255, 0);
 }
 
 .maintext{
     display: flex;
     flex-direction:column;
-    height:60vh;
+    text-align: center;
+    height: 35vh;
     justify-content: center;
     padding:2.5em;
     row-gap: .5em;
@@ -104,11 +108,11 @@ nav a:hover{
 }
 
 .maintext button{
-    width:20vw;
-    font-weight: 20em;
-    margin-top: 3em;
+    width:  40vw;
+    margin-left: 25em;
+    margin-top: 1em;
     border-radius:15px;
-    padding:1em;
+    padding: 1em;
     color: var(--white);
     background-color:rgb(6, 168, 14);
     border: 1px solid var(--green);
@@ -194,10 +198,14 @@ table{
 footer{
     background: linear-gradient(to right,rgb(2, 3, 3),rgb(3, 3, 3));
     color:var(--white);
-    padding:15em 2em;
+    padding:15em em;
+}
+footer,p{
+    text-align: center;
 }
 #copyright{
     margin-left:30px;
+    text-align: left;
 }
 .social-menu ul{
     display: flex;
