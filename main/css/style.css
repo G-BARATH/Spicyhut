@@ -24,11 +24,11 @@ h1{
 }
 header a{
     color:var(--white);
-    text-decoration: None;
+    text-decoration: none;
     display: inline;
     /*------menu location--------*/
     color: rgb(255, 166, 0);
-    font-size: 1.5em;
+    font-size: 1.1em;
     min-width: 120px;
 }
 
@@ -37,19 +37,19 @@ header{
     display:flex;
     padding: 2em;
     flex-wrap: wrap;
-    row-gap: em;
+    row-gap: 2em;
 }
 
 #logo{
     flex:2;
     font-size: 2.2em;
     /*-------spicy color-----*/
-    color:orange;
+    color:rgb(255, 173, 20);
     min-width: 260px
 }
 
 header h2 i,nav a i{
-    margin-right: .5em;
+    margin-right:.5em;
 }
 /*-----------menu loc location------------*/
 nav{
@@ -75,7 +75,7 @@ nav a:hover{
 }
 
 .maintext div{
-    margin-top: 1em;
+    margin-top:1em;
 }
 
 .tagline1{
@@ -178,11 +178,11 @@ table{
 footer{
     background: linear-gradient(to right,rgb(2, 3, 3),rgb(3, 3, 3));
     color:var(--white);
-    padding:.25em 1em;
+    padding:13em 2em;
 }
 
 #copyright{
-    margin-left:20px;
+    margin-left:30px;
 }
 .social-menu ul{
     display: flex;
