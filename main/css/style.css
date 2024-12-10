@@ -7,7 +7,7 @@
 }
 
 #run{
-    color:lightgoldenrodyellow;
+    color:white;
     font-weight: bolder;
     text-align: center;
     white-space: nowrap; /* Prevents the text from wrapping */
@@ -18,19 +18,20 @@
 
     @keyframes moveText {
         0% {
-            transform: translateX(90%); /* Start off-screen to the right */
+            transform: translateX(100%); /* Start off-screen to the right */
         }
         100% {
-            transform: translateX(-90%); /* End off-screen to the left */
+            transform: translateX(-100%); /* End off-screen to the left */
         }
     }
     body{
-        background: #000;
+        background: url('../media/bg.jpg') center/cover no-repeat;
+       
     }
     
 
 .landing {
-    background: url('../media/bg.jpg');
+  
     background-size: cover;
     background-position: center;
     height:90vh;
@@ -45,8 +46,8 @@ header a{
     text-decoration: none;
     display: inline;
     /*------menu location--------*/
-    color: rgb(221, 165, 11);
-    font-size: 1.2em;
+    color: rgb(255, 198, 9);
+    font-size: 1em;
     min-width: 120px;
     font-weight: bolder;
 }
@@ -89,7 +90,7 @@ nav a:hover{
     display: flex;
     flex-direction:column;
     text-align: center;
-    height: 60vh;
+    height: 55vh;
     justify-content: center;
     padding:2.5em;
     row-gap: .5em;
@@ -103,19 +104,20 @@ nav a:hover{
     font-size:3em;
     justify-content: center;
     font-weight: bolder;
-    color:var(--red);
+    color: red;
     padding: 0em;
 }
 
 .maintext button{
-    width:  40vw;
-    margin-left: 6em;
+    width:  25vw;
+    margin-left: 32em;
     margin-top: 1em;
     border-radius:15px;
     padding: 1em;
     color: var(--white);
     background-color:rgb(6, 168, 14);
     border: 1px solid var(--green);
+    
 }
 .maintext button:hover{
     color:black;
@@ -198,7 +200,7 @@ table{
 footer{
     background: linear-gradient(to right,rgb(2, 3, 3),rgb(3, 3, 3));
     color:var(--white);
-    padding:15em 0em;
+    padding:10em 0em;
 }
 footer,p{
     text-align: center;
@@ -206,19 +208,19 @@ footer,p{
 #copyright{
     margin-left:30px;
     text-align: left;
+    margin: 1px 18px;
+    margin-top: -15em;
 }
 .social-menu ul{
     display: flex;
-    padding: 5em 0em;
+    padding: 15em 0em;
 }
 
 .social-menu ul li{
     list-style: none;
     display:inline-block;
     margin: 1px 18px;
-    
 }
-
 .social-menu ul li .fab{
     font-size: 25px;
     line-height: 40px;
@@ -250,8 +252,17 @@ footer,p{
     background-color: #4267B2;
 }
 .social-menu ul li:nth-child(2) a:hover{
-    background-color: #E4405F;
+    background-color: #bb204e;
 }
 .social-menu ul li:nth-child(3) a:hover{
     background-color: #00ACEE;
+}
+.social-menu ul li:nth-child(1){
+    color: #4267B2;
+}
+.social-menu ul li:nth-child(2){
+    color:#e70a4c;
+}
+.social-menu ul li:nth-child(3){
+    color: skyblue;
 }
