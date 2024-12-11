@@ -9,6 +9,7 @@
 #run{
     color:white;
     font-weight: bolder;
+    font-size: x-large;
     text-align: center;
     white-space: nowrap; /* Prevents the text from wrapping */
     overflow: hidden; /* Hides the text when it moves out of the container */
@@ -25,7 +26,7 @@
         }
     }
     body{
-        background: url('../media/bg.jpg') center/cover no-repeat;
+        background: url('../media/homepic.jpg') center/cover no-repeat;
        
     }
     
@@ -34,8 +35,9 @@
   
     background-size: cover;
     background-position: center;
-    height:90vh;
+    height:80vh;
     color:var(--white);
+    margin-top: -26em;
 }
 h1{
     margin-left: 15em;
@@ -47,7 +49,7 @@ header a{
     display: inline;
     /*------menu location--------*/
     color: rgb(255, 198, 9);
-    font-size: 1em;
+    font-size: .9em;
     min-width: 120px;
     font-weight: bolder;
 }
@@ -62,7 +64,7 @@ header{
 
 #logo{
     flex:2;
-    font-size: 2.5em;
+    font-size: 2em;
     /*-------spicy color-----*/
     color:rgb(255, 198, 9);
     min-width: 260px
@@ -92,12 +94,12 @@ nav a:hover{
     text-align: center;
     height: 55vh;
     justify-content: center;
-    padding:2.5em;
-    row-gap: .5em;
+    padding:2em;
+    row-gap: em;
 }
 
 .maintext div{
-    margin-top:1em;
+    margin-top:1.5em;
 }
 
 .tagline1{
@@ -105,7 +107,7 @@ nav a:hover{
     justify-content: center;
     font-weight: bolder;
     color: red;
-    padding: 0em;
+    padding: em;
 }
 
 .maintext button{
@@ -127,48 +129,13 @@ nav a:hover{
     color:orange;
     font-size: 2em;
 }
-#menuheading,#locheading{
+#locheading{
     background:linear-gradient(to right,rgb(2, 3, 3),rgb(49, 221, 192));
     font-size:2.5em;
     color:var(--red);
     display: flex;
     justify-content: center;
 }
-.menu{
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
-    background:linear-gradient(to right,rgb(100, 100, 100),rgb(53, 52, 52));
-}
-
-.maincourse{
-    grid-row: span 2;
-}
-
-.menu tr{
-    display:flex;
-    justify-content: center;
-    margin-top:.8em;
-    color:var(--white);
-}
-
-.menu th{
-    color:var(--green);
-    font-size: 1.8em;
-}
-.menu td:nth-child(1){
-    flex:1;
-    justify-self: left;
-}
-
-.menu td:nth-child(2){
-    justify-self: right;
-}
-
-table{
-    width:100%;
-    padding:3em;
-}
-
 .locations address{
     color:white;
 }
@@ -198,22 +165,38 @@ table{
     margin-bottom: 1.2em;
 }
 footer{
-    background: linear-gradient(to right,rgb(2, 3, 3),rgb(3, 3, 3));
     color:var(--white);
-    padding:10em 0em;
+    padding: 10em 0em;
 }
 footer,p{
     text-align: center;
+    padding: 5em 0em;
 }
 #copyright{
     margin-left:30px;
     text-align: left;
     margin: 1px 18px;
-    margin-top: -15em;
+    margin-top: -3em;
+}
+#Rights{
+    text-align: left;
+    margin-top: 3em;
+}
+#dev{
+    text-align: center;
+    margin-top: -2em;
+}
+#Thank{
+    text-align: right;
+    margin-top: -2em;
+}
+.social-menu{
+    background: black;
+    
 }
 .social-menu ul{
     display: flex;
-    padding: 15em 0em;
+    padding: 3em 0em;
 }
 
 .social-menu ul li{
@@ -224,7 +207,7 @@ footer,p{
 .social-menu ul li .fab{
     font-size: 25px;
     line-height: 40px;
-    transition: .3s;
+    transition: .9s;
     color: #000;
 }
 
@@ -259,6 +242,7 @@ footer,p{
 }
 .social-menu ul li:nth-child(1){
     color: #4267B2;
+    font-size: larger;
 }
 .social-menu ul li:nth-child(2){
     color:#e70a4c;
