@@ -9,12 +9,13 @@
 #run{
     color:white;
     font-weight: bolder;
-    font-size: x-large;
+    font-size:large;
+    margin-top: 1em;
     text-align: center;
     white-space: nowrap; /* Prevents the text from wrapping */
     overflow: hidden; /* Hides the text when it moves out of the container */
     width: 100%; /* Ensures the full width is used */
-    animation: moveText 10s linear infinite; /* Animation definition */
+    animation: moveText 8s linear infinite; /* Animation definition */
     }
 
     @keyframes moveText {
@@ -99,7 +100,7 @@ nav a:hover{
 }
 
 .maintext div{
-    margin-top:1.5em;
+    margin-top:2em;
 }
 
 .tagline1{
@@ -107,19 +108,31 @@ nav a:hover{
     justify-content: center;
     font-weight: bolder;
     color: red;
-    padding: em;
+    padding:-1em;
 }
 
 .maintext button{
+    background-color: #ca0943;
+    border: 1px solid var(--black);
     width:  25vw;
-    margin-left: 32em;
+    margin-left: 29.5em;
     margin-top: 1em;
     border-radius:15px;
     padding: 1em;
     color: var(--white);
-    background-color:rgb(6, 168, 14);
-    border: 1px solid var(--green);
+    font-size: medium;
     
+}
+.callus button{
+    background-color: #2fb806;
+    border: 1px solid var(--black);
+    width:  25vw;
+    margin-left: 1em;
+    margin-top: 1em;
+    border-radius:15px;
+    padding: 1em;
+    color: var(--white);
+    font-size: medium;
 }
 .maintext button:hover{
     color:black;
