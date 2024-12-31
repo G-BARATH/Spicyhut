@@ -5,27 +5,6 @@
     --white:whitesmoke;
     --black:#000;
 }
-
-#run{
-    color:white;
-    font-weight: bolder;
-    font-size:large;
-    margin-top: 1em;
-    text-align: center;
-    white-space: nowrap; /* Prevents the text from wrapping */
-    overflow: hidden; /* Hides the text when it moves out of the container */
-    width: 100%; /* Ensures the full width is used */
-    animation: moveText 8s linear infinite; /* Animation definition */
-    }
-
-    @keyframes moveText {
-        0% {
-            transform: translateX(100%); /* Start off-screen to the right */
-        }
-        100% {
-            transform: translateX(-100%); /* End off-screen to the left */
-        }
-    }
     body{
         background: url('../media/homepic.jpg') center/cover no-repeat;
        
@@ -36,9 +15,9 @@
   
     background-size: cover;
     background-position: center;
-    height:80vh;
+    height:100vh;
     color:var(--white);
-    margin-top: -26em;
+    margin-top:1em;
 }
 h1{
     margin-left: 15em;
@@ -93,14 +72,13 @@ nav a:hover{
     display: flex;
     flex-direction:column;
     text-align: center;
-    height: 55vh;
+    height: 69vh;
     justify-content: center;
     padding:2em;
-    row-gap: em;
 }
 
 .maintext div{
-    margin-top:2em;
+    margin-top:1.9em;
 }
 
 .tagline1{
@@ -108,7 +86,6 @@ nav a:hover{
     justify-content: center;
     font-weight: bolder;
     color: red;
-    padding:-1em;
 }
 
 .maintext button{
@@ -143,11 +120,23 @@ nav a:hover{
     font-size: 2em;
 }
 #locheading{
-    background:linear-gradient(to right,rgb(2, 3, 3),rgb(49, 221, 192));
+    background:linear-gradient(to right,rgb(65, 179, 20),rgb(89, 231, 7));
     font-size:2.5em;
-    color:var(--red);
+    color:var(--black);
     display: flex;
     justify-content: center;
+}
+.Home {
+   text-align: right;
+   padding: 10px;
+}
+
+.Home a{
+   text-decoration: none;
+  color: rgb(255, 251, 0);
+  margin-left: 20px;
+  font-size: large;
+  font-weight: bolder;
 }
 .locations address{
     color:white;
