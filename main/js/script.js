@@ -1,12 +1,3 @@
-function redirectToZomato() {
-    console.log("Redirecting to Zomato...");
-    const zomatoLink = "order/order.html";
-    
-    if (zomatoLink) {
-      console.log("Redirecting to:", zomatoLink);
-      window.location.href = zomatoLink;
-    } else {
-      alert("Zomato link is not available!");
-    }
-  }
-  
+document.getElementById('openPageButton').addEventListener('click', function() {
+    window.location.href = 'table/index.html';  // Redirect to the second page in the folder
+});

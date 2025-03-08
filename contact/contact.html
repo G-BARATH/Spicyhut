@@ -1,35 +1,125 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>SPICY | HUT| CONTACT PAGE</title>
-    <link rel="stylesheet" href="contact.css">
+	<title>Spicy Hut | CONTACT</title>
+	<meta charset="utf-8">
+	<meta name="author" content="pixelhint.com">
+	<meta name="description" content="Sublime Stunning free HTML5/CSS3 website template"/>
+	<link rel="stylesheet" type="text/css" href="./css/contact.css">
+	<link rel="stylesheet" type="text/css" href="./css/fancybox-buttons.css">
+	<link rel="stylesheet" type="text/css" href="./css/fancybox-thumbs.css">
+	<link rel="stylesheet" type="text/css" href="./css/fancybox.css">
+	<link rel="stylesheet" type="text/css" href="./css/animate.css">
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
 </head>
-<body background="/contact/images/bg.jpg">
-    <div class="container">
-    <div style="text-align:center">
-      <h2>Contact Us</h2>
-      <p><b>SPICY HUT RESTAURANT </b></p>
-    </div>
-    <div class="row">
-      <div class="column">
-        <img src="images/map.jpg" style="width:100%">
-      </div>
-      <div class="column">
-        <form action="/action_page.php">
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">SALEM</option>
-            <option value="canada">DHARMAPURI</option>
-            <option value="usa">KRISHNAGIRI</option>
-          </select>
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-          <input type="submit" value="Submit">
-        </form>
-      </div>
-    </div>
-  </div> 
-  </body></html>
+<body>
+
+	<section class="billboard light">
+		<header class="wrapper light">
+			<a href="#"><img class="logo" src="./img/favicon.ico" alt="Spicy|Hut Restaurant"/></a>
+			<nav>
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../menu/index.html">Menu</a></li>
+					<li><a href="../karaoke/karaoke.html">Karaoke/Party</a></li>
+					<li><a href="../location.html">Location</a></li>
+					<li><a href="../contact/contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="caption light animated wow fadeInDown clearfix">
+			<h1>Come talk to us</h1>
+			<p>We always value your words.</p>
+			<hr>
+		</div>
+		<div class="shadow"></div>
+	</section><!--  End billboard  -->
+
+
+	<section class="services wrapper">
+		<ul class="clearfix">
+			<li class="animated wow fadeInDown">
+				<iframe width="600" height="450" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125042.1296226274!2d78.05589402995896!3d11.654204331302562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf12a142a6b13%3A0xcf0641c53fe0c204!2sTN27%20Restobar!5e0!3m2!1sen!2sin!4v1738493018802!5m2!1sen!2sin"></iframe>
+				<span class="separator"></span>
+			</li>
+			<li class="animated wow fadeInDown"  data-wow-delay=".2s">
+				<img class="icon" src="../contact/img/icon2.png" alt=""/>
+				<span class="separator"></span>
+				<h2>How to reach us:</h2>
+				<p>Phone No. +91 6381608230</p>
+				<p>Fax:           00100 179382983302</p>
+				<p>Shop No. 36/A. Road. Salem. Block. 6. BleckerStreet.</p>
+				<!-- Google maps embed here -->
+			</li>
+		</ul>
+	</section><!--  End services  -->
+
+
+	<section class="video">
+		<img class="logo" src="../contact/img/favicon.ico" alt="Restaurant welcomes you" class="video_logo animated wow fadeInDown"/>
+		<img src="../img/video_logo.png" alt="" class="video_logo animated wow fadeInDown"/>
+		<h3 class="animated wow fadeInDown">Please send us your opinions in the form below, thank you!</h3>
+
+	</section><!--  End video  -->
+	
+	<!-- contact form -->
+	<section class="contact">
+		<div id="form-main">
+		  <div id="form-div">
+		    <form class="form" id="form1">
+		      
+		      <p class="name">
+		        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+		      </p>
+		      
+		      <p class="email">
+		        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+		      </p>
+		      
+		      <p class="text">
+		        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+		      </p>
+		      
+		      
+		      <div class="submit">
+		        <input type="submit" value="SEND" id="button-blue"/>
+		        <div class="ease"></div>
+		      </div>
+		    </form>
+		  </div>
+	</section>
+	
+	<footer>
+		<div class="wrapper">
+			<div class="rights">
+				<p>All Rights Reserved  2020 - SpicHut Restaurant</p>
+			</div>
+
+			<nav>
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../menu/index.html">Menu</a></li>
+					<li><a href="../karaoke/karaoke.html">Karaoke/Party</a></li>
+					<li><a href="../location.html">location\</a></li>
+					<li><a href="../contact/contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>		
+	</footer><!--  End footer  -->
+	<script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/fancybox.js"></script>
+    <script type="text/javascript" src="./js/fancybox-buttons.js"></script>
+    <script type="text/javascript" src="./js/fancybox-media.js"></script>
+    <script type="text/javascript" src="./js/fancybox-thumbs.js"></script>
+    <script type="text/javascript" src="./js/wow.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
+
+	
+
+
+	
+
+

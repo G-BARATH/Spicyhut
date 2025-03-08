@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Table Booking</title>
+    <link rel="stylesheet" href="./table.css">
+</head>
+<body background="../table/homepage_pic.jpg">
+    <div class="container">
+        <h1>RESTAURANT TABLE BOOKING</h1>
+        <form  action="connect.php" method="post">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+            </div>
+
+            <div class="form-group">
+                <label for="date">Reservation Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Reservation Time</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+
+            <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" name="guests" required placeholder="Enter number of guests" min="1" max="10">
+                <span id="guestError" class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Special Requests</label>
+                <textarea id="message" name="message" placeholder="Any special requests or comments"></textarea>
+            </div>
+
+            <button type="submit" class="btn">Book Now</button>
+        </form>
+        <div id="successMessage" class="success-message" style="display: none;">
+            <p>Thank you for your booking! We look forward to serving you.</p>
+        </div>
+    </div>
+
+    <script src="./table.js"></script>
+</body>
+</html>
