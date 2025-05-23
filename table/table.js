@@ -8,8 +8,9 @@ document.getElementById('bookingForm').addEventListener('submit', function(event
     const date = document.getElementById('date').value;
     const time = document.getElementById('time').value;
     const guests = parseInt(document.getElementById('guests').value);
+    const dishes = document.getElementById('food').value.trim();
     const message = document.getElementById('message').value.trim();
-
+    
     // Validate number of guests (must be between 1 and 10)
     const guestError = document.getElementById('guestError');
     if (guests < 1 || guests > 10) {
