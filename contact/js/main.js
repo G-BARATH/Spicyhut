@@ -37,3 +37,22 @@ $(document).ready(function(){
 	
 });
 					
+//submit
+function sendEmail() {
+	const emailContent = {
+		to: 'barathgovindharaj@gmail.com',
+		subject: 'Form Submission',
+		message: 'This is the form submission content.',
+	};
+
+	fetch('send-email.php', {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+		},
+		body: JSON.stringify(emailContent),
+	})
+	.then(response => response.json())
+	.then(data => alert('Email Sent!'))
+	.catch(error => console.error('Error:', error));
+}
